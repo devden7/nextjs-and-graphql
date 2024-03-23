@@ -15,3 +15,13 @@ export const profileFormSchema = z.object({
   username: z.string().min(0, { message: 'Username tidak boleh kosong' }),
   name: z.string().min(1, { message: 'Name Lengkap tidak boleh kosong' }),
 });
+
+export const changePasswordFormSchema = z.object({
+  username: z.string().min(0, { message: 'Username tidak boleh kosong' }),
+  oldPassword: z
+    .string()
+    .min(1, { message: 'Password lama tidak boleh kosong' }),
+  newPassword: z
+    .string()
+    .min(1, { message: 'Password baru tidak boleh kosong' }),
+});

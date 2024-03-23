@@ -24,7 +24,9 @@ export default function Home() {
             <Link href="/profile">
               <Button className="w-full">Profile</Button>
             </Link>
-            <Button>Password</Button>
+            <Link href="/password">
+              <Button className="w-full">Password</Button>
+            </Link>
             <Button variant="destructive">Logout</Button>
           </CardContent>
         </Card>
