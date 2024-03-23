@@ -21,7 +21,9 @@ export default function Home() {
 
         <Card className="w-1/3 mt-5">
           <CardContent className="flex flex-col gap-2 mt-5">
-            <Button>Profile</Button>
+            <Link href="/profile">
+              <Button className="w-full">Profile</Button>
+            </Link>
             <Button>Password</Button>
             <Button variant="destructive">Logout</Button>
           </CardContent>
