@@ -9,12 +9,16 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import Link from 'next/link';
 
 const Navbar = () => {
   const { setTheme } = useTheme();
   return (
     <header className="container">
-      <nav className="flex justify-end items-center h-14">
+      <nav className="flex justify-between items-center h-14">
+        <Link href="/" className="font-semibold">
+          Home
+        </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
