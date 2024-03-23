@@ -1,12 +1,6 @@
 import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,7 +12,9 @@ export default function Home() {
         </p>
         <Card className="w-1/3 mt-5">
           <CardContent className="flex flex-col gap-2 mt-5">
-            <Button>Login</Button>
+            <Link href="/login">
+              <Button className="w-full">Login</Button>
+            </Link>
             <Button>Register</Button>
           </CardContent>
         </Card>
